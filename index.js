@@ -80,7 +80,7 @@
             <input type="text" name="timi" id="inputTimi">
         </p>
         <p>
-            <label for="inputperioxi">Περιοχή:<sup>*</sup></label>
+            <label for="inputPerioxi" id="inputPerioxi">Περιοχή:<sup>*</sup></label>
             <select id="inputPerioxi" name="perioxi">
     <option value="athina">Αθήνα</option>
     <option value="Thessaloniki">Θεσσαλονίκη</option>
@@ -89,7 +89,7 @@
         </p>
         <p>
         
-            <label for="inputdiathesimotita">Διαθεσιμότητα:<sup>*</sup></label>
+            <label for="inputdiathesimotita" id="inputdiathesimotita">Διαθεσιμότητα:<sup>*</sup> </label>
             <select id="inputdiathesimotita" name="diathesimotita">
     <option value="enoikiasi">ενοικίαση</option>
     <option value="polisi">πώληση</option>
@@ -100,7 +100,7 @@
             <input type="text" name="tetragonika" id="inputTetragonika">
             <p id="demo"></p>
             </p>
-        <input type="submit" value="Submit" onclick="myFunction() >
+        <button type="button" onclick="myFunction()">Submit</button>
     </div>
     <div class="col-sm-8 text-left"> 
       <ol class="formr">
@@ -108,18 +108,17 @@
         <li><em>Περιοχή:</em> <?php echo $_POST["perioxi"]?></li>
         <li><em>Διαθεσιμότητα:</em> <?php echo $_POST["diathesimotita"]?></li>
         <li><em>Τετραγωνικά:</em> <?php echo $_POST["tetragonika"]?></li>
+    <button type="button">Delete</button>
     </ol>
     </div>
-    <div class="col-sm-2 sidenav">
-      
-    </div>
+   
   </div>
 </div>
 
 <footer class="container-fluid text-center">
   <p>All rights reserved</p>
 </footer>
-<button type="button" onclick="myFunction()">Submit</button>
+<button type="button">Delete</button>
 
 <p id="demo"></p>
 
